@@ -358,7 +358,7 @@ const CSS = `
     .bk-stat{min-width:100%;flex:0 0 100%;}
   }
   .bk-robot-wrap{
-    position:fixed;bottom:18px;left:0;z-index:200;pointer-events:none;
+    position:fixed;bottom:clamp(10px,4vw,18px);left:0;z-index:200;pointer-events:none;
     display:flex;flex-direction:column;align-items:center;
     animation:bk-robot-walk 11s cubic-bezier(.45,0,.55,1) forwards;
   }
@@ -368,7 +368,10 @@ const CSS = `
     72%{transform:translateX(40vw);}
     100%{transform:translateX(calc(100vw + 60px));}
   }
-  .bk-robot-bounce{animation:bk-robot-bounce .5s ease-in-out infinite alternate;}
+  .bk-robot-bounce{
+    width:clamp(40px,11vw,64px);height:auto;
+    animation:bk-robot-bounce .5s ease-in-out infinite alternate;
+  }
   @keyframes bk-robot-bounce{from{transform:translateY(0) rotate(-1.5deg);}to{transform:translateY(-6px) rotate(1.5deg);}}
   .bk-robot-leg{animation:bk-robot-leg .4s ease-in-out infinite alternate;transform-origin:top center;}
   .bk-robot-leg.right{animation-delay:.2s;}
@@ -376,8 +379,10 @@ const CSS = `
   .bk-robot-led{animation:bk-pulseDot 1s ease-in-out infinite;}
   .bk-robot-bubble{
     background:var(--surface);border:1px solid var(--line-strong);border-radius:12px;
-    padding:8px 14px;margin-bottom:6px;font-family:var(--mono);font-size:12px;color:var(--text);
-    white-space:nowrap;box-shadow:0 8px 20px rgba(16,24,40,.14);
+    padding:clamp(5px,1.6vw,8px) clamp(8px,3vw,14px);margin-bottom:6px;
+    font-family:var(--mono);font-size:clamp(9.5px,2.6vw,12px);color:var(--text);
+    max-width:min(78vw,320px);white-space:normal;text-align:center;line-height:1.35;
+    box-shadow:0 8px 20px rgba(16,24,40,.14);
     animation:bk-bubble-pop .4s cubic-bezier(.34,1.56,.64,1) both;
     position:relative;
   }
@@ -387,7 +392,6 @@ const CSS = `
     border-bottom:1px solid var(--line-strong);rotate:45deg;
   }
   @keyframes bk-bubble-pop{from{opacity:0;transform:scale(.6) translateY(6px);}to{opacity:1;transform:scale(1) translateY(0);}}
-  @media (max-width:640px){.bk-robot-bubble{font-size:10.5px;padding:6px 10px;}}
   @media (prefers-reduced-motion:reduce){.bk-robot-wrap{display:none;}}
   @media (prefers-reduced-motion:reduce){ .bk-root *{animation:none !important;transition:none !important;} }
 `;
