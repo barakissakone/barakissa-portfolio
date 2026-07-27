@@ -381,7 +381,8 @@ const CSS = `
     background:var(--surface);border:1px solid var(--line-strong);border-radius:12px;
     padding:clamp(5px,1.6vw,8px) clamp(8px,3vw,14px);margin-bottom:6px;
     font-family:var(--mono);font-size:clamp(9.5px,2.6vw,12px);color:var(--text);
-    max-width:min(78vw,320px);white-space:normal;text-align:center;line-height:1.35;
+    width:max-content;max-width:min(78vw,320px);white-space:normal;text-align:center;line-height:1.35;
+    overflow-wrap:break-word;word-break:break-word;
     box-shadow:0 8px 20px rgba(16,24,40,.14);
     animation:bk-bubble-pop .4s cubic-bezier(.34,1.56,.64,1) both;
     position:relative;
