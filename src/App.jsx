@@ -242,6 +242,7 @@ const CSS = `
     0%{transform:translate(var(--cx), var(--cy)) rotate(0deg) scale(1);opacity:1;}
     100%{transform:translate(calc(var(--cx) + var(--dx)), calc(var(--cy) + var(--dy))) rotate(var(--rot)) scale(.4);opacity:0;}
   }
+  .bk-lightbox-backdrop{
     position:fixed;inset:0;z-index:1000;background:rgba(12,14,20,.88);
     display:flex;align-items:center;justify-content:center;padding:32px;
     animation:bk-fadeUp .25s ease forwards;
@@ -331,8 +332,30 @@ const CSS = `
     .bk-navlinks{display:none;}
     .bk-burger{display:flex;}
     .bk-contact-grid{grid-template-columns:1fr;}
-    .bk-section{padding:70px 0;}
+    .bk-section{padding:64px 0;}
     .bk-proj-note{margin-top:-24px;}
+    .bk-nav{padding:14px 20px;}
+    .bk-wrap{padding:0 20px;}
+    .bk-exp-card{padding:24px 20px;}
+    .bk-avail-box{padding:20px;}
+  }
+  @media (max-width:640px){
+    .bk-hero{padding:50px 0 40px;}
+    .bk-stats-strip{gap:20px;}
+    .bk-stat{min-width:calc(50% - 10px);flex:0 0 calc(50% - 10px);}
+    .bk-hero-meta{gap:14px;font-size:12px;}
+    .bk-cta-row{gap:10px;}
+    .bk-btn{padding:12px 18px;font-size:12px;}
+    .bk-why-cycle-item h4{font-size:19px;}
+    .bk-t-item{padding-left:32px;}
+    .bk-timeline::before{left:6px;}
+    .bk-proj-body{padding:22px 20px 24px;}
+    .bk-marquee-track{gap:24px;font-size:12px;}
+  }
+  @media (max-width:420px){
+    .bk-wrap{padding:0 16px;}
+    .bk-logo{font-size:13px;}
+    .bk-stat{min-width:100%;flex:0 0 100%;}
   }
   .bk-robot-wrap{
     position:fixed;bottom:18px;left:0;z-index:200;pointer-events:none;
@@ -420,22 +443,22 @@ const CYCLE_WORDS = ["Data", "Intelligence Artificielle", "Développement", "Com
 
 const WHY_ME = [
   {
-    icon: "",
+    icon: "🧩",
     title: "Double culture terrain & théorie",
     desc: "Un Master en cours, une Licence MIAGE en poche, et des expériences concrètes en entreprise entre Lille et Abidjan.",
   },
   {
-    icon: "",
+    icon: "🔁",
     title: "De la donnée au déploiement",
     desc: "À l'aise aussi bien dans un notebook d'entraînement de modèle que dans une interface React livrée en production.",
   },
   {
-    icon: "",
+    icon: "🧭",
     title: "Autonome, mobile, rapide à s'adapter",
     desc: "Habituée à changer de contexte (pays, équipe, stack) et à monter en compétence vite sans perdre en rigueur.",
   },
   {
-    icon: "",
+    icon: "📡",
     title: "Toujours en veille",
     desc: "Curieuse des dernières avancées en IA et computer vision, avec l'envie de les tester sur de vrais projets.",
   },
