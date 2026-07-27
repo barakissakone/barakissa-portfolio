@@ -410,8 +410,8 @@ const EXPERIENCES = [
     role: "Stagiaire Data, IA & Computer Vision",
     company: "Welleat",
     logo: WELLEAT_LOGO,
-    date: "Août 2026 – Sept. 2026",
-    loc: "Lille",
+    
+    loc: "Lille, EuraTechnologies",
     bullets: [
       "Préparation, nettoyage et annotation de données images",
       "Entraînement et évaluation de modèles de vision par ordinateur",
