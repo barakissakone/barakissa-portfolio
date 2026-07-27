@@ -1319,7 +1319,7 @@ export default function PortfolioBarakissaKone() {
         <span className="bk-eyebrow">02 · Pourquoi moi</span>
         <h2 className="bk-title">Ce que j'apporte à une équipe</h2>
         <span className="bk-title-underline" />
-        <p className="bk-section-lead">Au-delà des lignes du CV, voici ce qui, je crois, fait la différence.</p>
+        <p className="bk-section-lead"></p>
         <div className="bk-why-grid">
           <RobotThinking />
           <WhyMeCycler items={WHY_ME} />
@@ -1376,7 +1376,7 @@ export default function PortfolioBarakissaKone() {
         <h2 className="bk-title">Projets personnels</h2>
         <span className="bk-title-underline" />
         <p className="bk-section-lead">Des projets menés pour explorer la donnée, l'IA et le développement full-stack de bout en bout.</p>
-        <p className="bk-proj-note">Aperçus illustratifs — envoie-moi tes vraies captures d'écran et je les remplace directement.</p>
+        <p className="bk-proj-note"></p>
         <div className="bk-proj-grid">
           {PROJECTS.map((p) => {
             const Media = p.media;
@@ -1469,7 +1469,7 @@ export default function PortfolioBarakissaKone() {
               <div className="bk-c-icon">📍</div>
               <div>
                 <div className="bk-c-label">Localisation</div>
-                <div className="bk-c-value">1 allée Jules Verne, Lille</div>
+                <div className="bk-c-value"> Lille</div>
               </div>
             </div>
           </div>
