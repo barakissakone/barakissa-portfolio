@@ -536,27 +536,28 @@ const MARQUEE_ITEMS = ["React", "Angular", "Python", "FastAPI", "Symfony", "YOLO
 const CYCLE_WORDS = ["Data", "Intelligence Artificielle", "Développement", "Computer Vision"];
 
 const WHY_ME = [
+
+  {
+    icon: "🤝",
+    title: "Esprit d’équipe",
+    desc: "J’aime collaborer, partager mes idées, écouter les autres et avancer collectivement vers un objectif commun.",
+  },
+  {
+    icon: "⚡",
+    title: "Adaptabilité & apprentissage",
+    desc: "Je m’adapte rapidement à de nouveaux environnements, outils et technologies, avec une vraie envie de progresser.",
+  },
   {
     icon: "🧩",
-    title: "Double culture terrain & théorie",
-    desc: "Un Master en cours, une Licence MIAGE en poche, et des expériences concrètes en entreprise entre Lille et Abidjan.",
+    title: "Vision polyvalente",
+    desc: "Développement, Data et IA : je peux comprendre différentes dimensions d’un projet et contribuer là où mon profil est utile.",
   },
   {
-    icon: "🔁",
-    title: "De la donnée au déploiement",
-    desc: "À l'aise aussi bien dans un notebook d'entraînement de modèle que dans une interface React livrée en production.",
+    icon: "🚀",
+    title: "Curiosité & initiative",
+    desc: "J’aime comprendre comment les choses fonctionnent, expérimenter et proposer des solutions pour faire avancer les projets.",
   },
-  {
-    icon: "🧭",
-    title: "Autonome, mobile, rapide à s'adapter",
-    desc: "Habituée à changer de contexte (pays, équipe, stack) et à monter en compétence vite sans perdre en rigueur.",
-  },
-  {
-    icon: "📡",
-    title: "Toujours en veille",
-    desc: "Curieuse des dernières avancées en IA et computer vision, avec l'envie de les tester sur de vrais projets.",
-  },
-];
+]
 
 function RobotThinking() {
   return (
@@ -1416,7 +1417,7 @@ export default function PortfolioBarakissaKone() {
           <p>
             Mon stage chez Welleat, où je travaille sur la vision par ordinateur pour lutter contre le gaspillage
             alimentaire, m'a confirmé ce choix. J'aime autant écrire du code propre que fouiller un jeu de données
-            pour en tirer du sens — et je cherche aujourd'hui une équipe où je pourrai faire les deux, apprendre vite
+            pour en tirer du sens  et je cherche aujourd'hui une équipe où je pourrai faire les deux, apprendre vite
             et apporter une vraie contribution dès mon arrivée.
           </p>
         </div>
