@@ -523,7 +523,7 @@ const EXPERIENCES = [
   role: "Stagiaire Data, IA & Computer Vision",
   company: "Welleat",
   logo: WELLEAT_LOGO,
-  date: "Août 2026 – Sept. 2026",
+  date: "Août 2026 – En cours",
   loc: "Lille, EuraTechnologies",
   bullets: [
     <>Préparation, nettoyage et traitement des données images avec <strong>Python, Pandas</strong> et <strong>Label Studio</strong></>,
