@@ -1,41 +1,72 @@
-# Portfolio — Barakissa Kone
+# Barakissa Koné — Portfolio
 
-Portfolio React (Vite) présentant le profil, les compétences, les expériences,
-les projets et la formation de Barakissa Kone.
+Portfolio personnel présentant mon parcours, mes compétences et mes projets en **Data, Intelligence Artificielle, Computer Vision et Développement Full-Stack**.
 
-## Lancer le projet en local
+**Portfolio :** barakissa-portfolio.vercel.app
+
+---
+
+## À propos
+
+Je suis étudiante en **Master Big Data, Développement & Intelligence Artificielle** à l'IPSSI Lille.
+
+Je développe des projets mêlant **Data, IA et développement web**, avec un intérêt particulier pour le Machine Learning, la Computer Vision et les applications Full-Stack.
+
+Je recherche actuellement une **alternance 2026–2027**.
+
+**Localisation :** Lille — Mobile France entière  
+**Rythme :** 1 semaine école / 3 semaines entreprise
+
+---
+
+## Stack technique
+
+**Frontend**  
+React · JavaScript · HTML/CSS · Angular
+
+**Backend & API**  
+Python · FastAPI · PHP · Symfony · API REST
+
+**Data & IA**  
+Pandas · NumPy · scikit-learn · PyTorch · YOLO · Computer Vision · Label Studio
+
+**Bases de données**  
+SQL · PostgreSQL · MySQL · MongoDB
+
+**Outils**  
+Git · GitHub · Docker · Vercel
+
+---
+
+## Projets
+
+### Kaizen AI Food
+**Computer Vision · Intelligence Artificielle**
+
+Solution basée sur la Computer Vision pour identifier et classifier automatiquement des aliments afin de contribuer à l'analyse et à la réduction du gaspillage alimentaire.
+
+`Python` `YOLO` `Pandas` `Label Studio`
+
+### Impact IA
+**Data Science · Dashboard**
+
+Plateforme interactive permettant d'analyser les usages de l'IA chez les étudiants, d'identifier certains facteurs de risque et de générer des recommandations personnalisées.
+
+`Python` `Streamlit` `Pandas` `Plotly`
+
+### K-Hopes Immo
+**Développement Full-Stack**
+
+Application permettant de centraliser le suivi d'un projet immobilier : avancement des travaux, dépenses, justificatifs et gestion des données via API REST.
+
+`React` `FastAPI` `PostgreSQL` `Docker`
+
+---
+
+## Installation
 
 ```bash
+git clone https://github.com/barakissakone/barakissa-portfolio.git
+cd barakissa-portfolio
 npm install
 npm run dev
-```
-
-Puis ouvre l'adresse affichée dans le terminal (en général `http://localhost:5173`).
-
-## Construire pour la mise en ligne
-
-```bash
-npm run build
-```
-
-Le résultat est généré dans le dossier `dist/`, prêt à être déployé (Netlify,
-Vercel, GitHub Pages, etc.).
-
-## Structure
-
-```
-index.html          → page HTML de base
-src/main.jsx         → point d'entrée React
-src/App.jsx          → tout le portfolio (une seule page)
-src/index.css        → reset CSS minimal
-```
-
-## Personnaliser
-
-- Compétences, expériences, projets et formation : tableaux `SKILLS`,
-  `EXPERIENCES`, `PROJECTS` en haut de `src/App.jsx`.
-- Couleurs et typographies : variables CSS au tout début de la constante
-  `CSS` dans `src/App.jsx` (`--bg`, `--yolo`, `--teal`, etc.).
-- Visuels des projets : composants `KaizenMedia`, `DashboardMedia`,
-  `KHopesMedia` — remplace-les par de vraies captures d'écran (`<img src="..." />`)
-  dès que tu en as.
