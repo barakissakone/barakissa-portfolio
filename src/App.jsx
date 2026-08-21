@@ -774,7 +774,7 @@ const PRODESTIC_INFO = {
   name: "PRODESTIC",
   subtitle: "Développement Web Full-Stack",
   loc: "Côte d'Ivoire",
-  context: "Première expérience professionnelle en développement web, au sein d'une structure ivoirienne où j'ai contribué à la conception et à la maintenance d'applications métier, du backend jusqu'à l'interface utilisateur. (Présentation rédigée à partir de ma mission — à ajuster si besoin.)",
+  context: "Première expérience professionnelle en développement web, au sein d'une structure ivoirienne où j'ai contribué à la conception et à la maintenance d'applications métier, du backend jusqu'à l'interface utilisateur.",
   missionIntro: "Mon rôle couvrait l'ensemble de la chaîne de développement, du backend au frontend :",
   pipeline: [
     { step: "Conception d'applications", desc: "Analyse des besoins et conception d'applications web Full-Stack avec Symfony, PHP et Angular." },
