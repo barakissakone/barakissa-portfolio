@@ -706,8 +706,7 @@ const SKILLS = [
     items: [
       { name: "Pandas / NumPy", level: 2 },
       { name: "scikit-learn", level: 2 },
-      { name: "Computer Vision", level: 2 },
-      { name: "YOLO · SAM 3", level: 2 },
+      { name: "YOLO / Computer Vision", level: 2 },
       { name: "PyTorch", level: 1 },
       { name: "LLM / Hugging Face", level: 1 },
     ],
